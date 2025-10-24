@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <title>Shortcut https*6</title>
+  <title>Open 6 urls</title>
 </head>
 <body>
   <button id="open">Click</button>
@@ -17,7 +17,7 @@
         'https://www.pinterest.com/pin/459719074485480241/'
       ];
       for (var i=0;i<urls.length;i++){
-        (function(u,delay){ setTimeout(function(){ window.open(u,'_blank'); }, delay); })(urls[i], i*600);
+        (function(u,delay){ setTimeout(function(){ window.open(u,'_blank'); }, delay); })(urls[i], i*300);
       }
     });
   </script>
