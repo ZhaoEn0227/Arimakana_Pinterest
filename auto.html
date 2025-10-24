@@ -1,16 +1,28 @@
-javascript:(function(){
-  var urls = [
-    'https://www.pinterest.com/pin/52846995623342396/',
-    'https://www.pinterest.com/pin/349169777382029239/',
-    'https://www.pinterest.com/pin/332140541288414622/',
-    'https://www.pinterest.com/pin/45528646227517541/',
-    'https://www.pinterest.com/pin/70016969203258475/',
-    'https://www.pinterest.com/pin/459719074485480241/'
-  ];
-  for (var i = 0; i < urls.length; i++) {
-    (function(u, delay){
-      setTimeout(function(){ window.open(u, '_blank'); }, delay);
-    })(urls[i], i * 600); // 每個分頁間隔 180ms
-  }
-})();
-
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>自動開啟 Pinterest 連結</title>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function() {
+      var urls = [
+        'https://www.pinterest.com/pin/52846995623342396/',
+        'https://www.pinterest.com/pin/349169777382029239/',
+        'https://www.pinterest.com/pin/332140541288414622/',
+        'https://www.pinterest.com/pin/45528646227517541/',
+        'https://www.pinterest.com/pin/70016969203258475/',
+        'https://www.pinterest.com/pin/459719074485480241/'
+      ];
+      for (var i = 0; i < urls.length; i++) {
+        (function(u, delay){
+          setTimeout(function(){
+            window.open(u, '_blank');
+          }, delay);
+        })(urls[i], i * 300);
+      }
+    });
+  </script>
+</body>
+</html>
