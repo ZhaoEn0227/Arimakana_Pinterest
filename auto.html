@@ -10,6 +10,7 @@ javascript:(function(){
   for (var i = 0; i < urls.length; i++) {
     (function(u, delay){
       setTimeout(function(){ window.open(u, '_blank'); }, delay);
-    })(urls[i], i * 180); // 每個分頁間隔 180ms
+    })(urls[i], i * 600); // 每個分頁間隔 180ms
   }
 })();
+
