@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <title>自動開啟 Pinterest 連結</title>
+  <title>auto</title>
 </head>
 <body>
   <script>
@@ -20,10 +20,11 @@
           setTimeout(function(){
             window.open(u, '_blank');
           }, delay);
-        })(urls[i], i * 600);
+        })(urls[i], i * 1000);
       }
     });
   </script>
 </body>
 </html>
+
 
